@@ -30,14 +30,10 @@ export default class Contador extends Component {
         return (
             <div>
                 <h2>Contador</h2>
-                {/* <h4>Passo: { this.state.passo }</h4> */}
-                {/* <h4>Valor: { this.state.valor }</h4> */}
-
                 <PassoForm passo={this.state.passo} onPassoChange={this.mudarPasso}/>
                 <Display valor={this.state.valor}/>
 
                 <Botoes onDecremento={this.decremento} onIncremento={this.incremento}/>
-
             </div>
         )
     }
